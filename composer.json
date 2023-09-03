@@ -2,9 +2,13 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
-    "require": {
+    "require":
+    {
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -12,7 +16,8 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5"
     },
-    "require-dev": {
+    "require-dev":
+    {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
@@ -20,19 +25,24 @@
         "nunomaduro/collision": "^5.10",
         "phpunit/phpunit": "^9.5.10"
     },
-    "autoload": {
-        "psr-4": {
+    "autoload":
+    {
+        "psr-4":
+        {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
+    "autoload-dev":
+    {
+        "psr-4":
+        {
             "Tests\\": "tests/"
         }
     },
-    "scripts": {
+    "scripts":
+    {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -47,12 +57,15 @@
             "@php artisan key:generate --ansi"
         ]
     },
-    "extra": {
-        "laravel": {
+    "extra":
+    {
+        "laravel":
+        {
             "dont-discover": []
         }
     },
-    "config": {
+    "config":
+    {
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
